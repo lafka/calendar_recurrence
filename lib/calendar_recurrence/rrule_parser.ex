@@ -187,7 +187,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__10(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -322,7 +322,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__17(rest, [0] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__16(rest, acc, stack, context, line, offset) do
+  defp parse__16(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__13(rest, acc, stack, context, line, offset)
   end
@@ -446,7 +446,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__21(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -725,7 +725,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__28(rest, [0] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__27(rest, acc, stack, context, line, offset) do
+  defp parse__27(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__24(rest, acc, stack, context, line, offset)
   end
@@ -993,7 +993,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__32(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -1272,7 +1272,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__39(rest, [0] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__38(rest, acc, stack, context, line, offset) do
+  defp parse__38(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__35(rest, acc, stack, context, line, offset)
   end
@@ -1540,7 +1540,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__43(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -1584,7 +1584,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__50(rest, [(x0 - 48) * 1] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__49(rest, acc, stack, context, line, offset) do
+  defp parse__49(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__46(rest, acc, stack, context, line, offset)
   end
@@ -1641,7 +1641,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__58(rest, [(x0 - 48) * 1] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__57(rest, acc, stack, context, line, offset) do
+  defp parse__57(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__54(rest, acc, stack, context, line, offset)
   end
@@ -1717,7 +1717,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     )
   end
 
-  defp parse__67(rest, acc, stack, context, line, offset) do
+  defp parse__67(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__62(rest, acc, stack, context, line, offset)
   end
@@ -1770,7 +1770,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__69(rest, '\f' ++ acc, stack, context, comb__line, comb__offset + 2)
   end
 
-  defp parse__68(rest, acc, stack, context, line, offset) do
+  defp parse__68(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__62(rest, acc, stack, context, line, offset)
   end
@@ -1899,7 +1899,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__70(rest, [31] ++ acc, stack, context, comb__line, comb__offset + 2)
   end
 
-  defp parse__69(rest, acc, stack, context, line, offset) do
+  defp parse__69(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__62(rest, acc, stack, context, line, offset)
   end
@@ -2792,7 +2792,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__90(rest, ["BYDAY"] ++ acc, stack, context, comb__line, comb__offset + 6)
   end
 
-  defp parse__89(rest, acc, stack, context, line, offset) do
+  defp parse__89(rest, _acc, stack, context, line, offset) do
     [_, acc | stack] = stack
     parse__85(rest, acc, stack, context, line, offset)
   end
@@ -2829,7 +2829,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__92(rest, ["SA"] ++ acc, stack, context, comb__line, comb__offset + 2)
   end
 
-  defp parse__91(rest, acc, stack, context, line, offset) do
+  defp parse__91(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__85(rest, acc, stack, context, line, offset)
   end
@@ -2885,7 +2885,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__96(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -3020,7 +3020,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__103(rest, [0] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__102(rest, acc, stack, context, line, offset) do
+  defp parse__102(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__99(rest, acc, stack, context, line, offset)
   end
@@ -3144,7 +3144,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__107(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -3430,7 +3430,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__114(rest, [0] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__113(rest, acc, stack, context, line, offset) do
+  defp parse__113(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__110(rest, acc, stack, context, line, offset)
   end
@@ -3698,7 +3698,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__118(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -3984,7 +3984,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__125(rest, [0] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__124(rest, acc, stack, context, line, offset) do
+  defp parse__124(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__121(rest, acc, stack, context, line, offset)
   end
@@ -4252,7 +4252,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__129(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
@@ -4303,7 +4303,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__136(rest, [(x0 - 48) * 1] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__135(rest, acc, stack, context, line, offset) do
+  defp parse__135(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__132(rest, acc, stack, context, line, offset)
   end
@@ -4360,7 +4360,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__144(rest, [(x0 - 48) * 1] ++ acc, stack, context, comb__line, comb__offset + 1)
   end
 
-  defp parse__143(rest, acc, stack, context, line, offset) do
+  defp parse__143(rest, _acc, stack, context, line, offset) do
     [acc | stack] = stack
     parse__140(rest, acc, stack, context, line, offset)
   end
@@ -4436,7 +4436,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     )
   end
 
-  defp parse__153(rest, acc, stack, context, line, offset) do
+  defp parse__153(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__148(rest, acc, stack, context, line, offset)
   end
@@ -4489,7 +4489,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__155(rest, '\f' ++ acc, stack, context, comb__line, comb__offset + 2)
   end
 
-  defp parse__154(rest, acc, stack, context, line, offset) do
+  defp parse__154(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__148(rest, acc, stack, context, line, offset)
   end
@@ -4618,7 +4618,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
     parse__156(rest, [31] ++ acc, stack, context, comb__line, comb__offset + 2)
   end
 
-  defp parse__155(rest, acc, stack, context, line, offset) do
+  defp parse__155(rest, _acc, stack, context, line, offset) do
     [_, _, acc | stack] = stack
     parse__148(rest, acc, stack, context, line, offset)
   end
@@ -5498,7 +5498,7 @@ defmodule CalendarRecurrence.RRULE.Parser do
   defp parse__88(
          inner_rest,
          inner_acc,
-         [{rest, acc, context, line, offset} | stack],
+         [{_rest, acc, _context, _line, _offset} | stack],
          inner_context,
          inner_line,
          inner_offset
